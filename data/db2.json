@@ -1,0 +1,73 @@
+{
+    "pessoa": [
+        {
+            "id": 1,
+            "nome": "Sidenia Bezerra",
+            "email": "sidenia@teste.com",
+            "phone": "11940665988",
+            "id_senha": 1,
+            "id_endereco": 1
+        },
+        {
+            "id": 2,
+            "nome": "Renata Bampi",
+            "email": "renata@teste.com",
+            "phone": "51994455099",
+            "id_senha": 2,
+            "id_endereco": 2
+        }
+    ],
+    "endereco": [
+        {
+            "rua": "Rua Urano",
+            "num": "44",
+            "complemento": "Bloco B",
+            "cidade_id": 1
+        },
+        {
+            "rua": "Rua da Prudencia",
+            "num": "47",
+            "complemento": "Casa",
+            "cidade_id": 2
+        }
+    ],
+    "cidade": [
+        {
+            "cidade_id": 1,
+            "nome": "São Paulo",
+            "estado_id": 1
+        },
+        {
+            "cidade_id": 2,
+            "nome": "Porto Alegre",
+            "estado_id": 2
+        }
+    ],
+    "estado": [
+        {
+            "estado_id": 1,
+            "nome": "São Paulo",
+            "sigla": "SP",
+            "pais_id": 1
+        },
+        {
+            "estado_id": 2,
+            "nome": "Rio Grande do Sul",
+            "sigla": "RS",
+            "pais_id": 1
+        }
+    ],
+    "pais": [
+        {
+            "pais_id": 1,
+            "nome": "Brasil",
+            "sigla": "BRA"
+        },
+        {
+            "pais_id": 2,
+            "nome": "Itália",
+            "sigla": "BRA"
+        }
+    ]
+  }
+  
