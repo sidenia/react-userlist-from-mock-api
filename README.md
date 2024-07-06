@@ -5,6 +5,26 @@
 
 **_Markdowndoc_**: https://www.markdownguide.org/basic-syntax/
 
+# PATTERN FOR COMMITS
+
+Use a keyword between [keyword] to identify the type of changing, according to the keywords bellow:
+
+`[FEATURE]`, `[REFACTOR]`, `[DOC]`, `[TEST]`, `[CHORE] [FIX]`
+
+* Feature to add new features
+  * `git commit -m "[FEATURE] Add authentication support via OAuth"`
+* Refactor to improve any code area
+  * `git commit -m "[REFACTOR] improve directory structure of the project"`
+* Doc to write, update or delete any parte of the doc.
+  * `git commit -m "[DOC] update read.me"`
+* Test to coding tests
+  * `git commit -m "[TEST] unit tests for function sum"`
+* Chore any maintenance of the dependencies
+  * `git commit -m "[CHORE] update mui version"`
+* Fix correcting bugs
+  * `git commit -m "[FIX] correct function sum"`
+
+
 # HOW TO RUN A MOCK API WITH JSON SERVER
 
 **_Link documentation_**: https://www.freecodecamp.org/news/json-server-for-frontend-development/
@@ -54,7 +74,6 @@ if you need to change the port  pass the flag --port
 * Run the comand:  `npm install`
 * Then still at the app folder, on terminal run  `npm run dev`
 
-
 # CODE STRUCTURE
 
 * The style is defined by CSS by component
@@ -84,5 +103,4 @@ if you need to change the port  pass the flag --port
     Easy-to-use programmatic navigation, especially within functions or hooks.
     Useful for cases where navigation is logic-based, such as after an asynchronous operation (for example, after login is successful).
     ```
-
     ![useNavigate login usage](doc_img/useNavigate_login.png)
