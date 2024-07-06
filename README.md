@@ -5,6 +5,7 @@
 
 **_Markdowndoc_**: https://www.markdownguide.org/basic-syntax/
 
+
 # PATTERN FOR COMMITS
 
 Use a keyword between [keyword] to identify the type of changing, according to the keywords bellow:
@@ -24,47 +25,22 @@ Use a keyword between [keyword] to identify the type of changing, according to t
 * Fix correcting bugs
   * `git commit -m "[FIX] correct function sum"`
 
-
-# HOW TO RUN A MOCK API WITH JSON SERVER
+# HOW TO RUN THE MOCK JSON SERVER API
 
 **_Link documentation_**: https://www.freecodecamp.org/news/json-server-for-frontend-development/
 
-### Step #1 - Install JSON Server
+##### Install JSON Server
 
- `npm install -g json-server`
+* At the terminal, navigate to the /data folder and run:
 
-### Step #2 - Create a JSON File
+    `npm install -g json-server`
 
- ex:  db.json
+* After that run:
 
-### Step #3 - Create Data
+  `json-server --watch db.json --port 8000`
 
-    * Each key will be an entitiy
-    * follow the patttern:
-      	{
-            "entity1": [
-                {
-                    "id": 1,
-                    "key": value,
-                }
-            ],
-            "entity2": [
-                {
-                    "id": 1,
-                    "key": value,
-                }
-            ],
-        }
+To create your own api, you can go to the topic **_CREATE YOUR OWN MOCK API_** , at the end of this doc.
 
-### Step #4 - Start the Server
-
-`json-server --watch db.json`
-
-This will run on "https://localhost:3000"
-
-if you need to change the port  pass the flag --port
-
-`json-server --watch db.json --port 8000`
 
 # HOW TO RUN THE APP
 
@@ -103,4 +79,42 @@ if you need to change the port  pass the flag --port
     Easy-to-use programmatic navigation, especially within functions or hooks.
     Useful for cases where navigation is logic-based, such as after an asynchronous operation (for example, after login is successful).
     ```
+
     ![useNavigate login usage](doc_img/useNavigate_login.png)
+
+# CREATE YOUR OWN MOCK API:
+
+### Step #1 - Install JSON Server
+
+ `npm install -g json-server`
+
+### Step #2 - Create a JSON File
+
+ ex:  db.json
+
+### Step #3 - Create Data
+
+    * Each key will be an entitiy
+    * follow the patttern:
+      	{
+            "entity1": [
+                {
+                    "id": 1,
+                    "key": value,
+                }
+            ],
+            "entity2": [
+                {
+                    "id": 1,
+                    "key": value,
+                }
+            ],
+        }
+
+### Step #4 - Start the Server
+
+`json-server --watch db.json`
+
+by default this will run on "https://localhost:3000" but you can run in another port passsing the flag --port at the command
+
+`json-server --watch db.json --port 8000`
