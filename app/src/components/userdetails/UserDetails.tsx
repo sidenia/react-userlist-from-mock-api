@@ -8,7 +8,7 @@ const UserDetails = () => {
     const { data: user, error, isPending } = useFetch("http://localhost:8000/users/" + id);
     
     return (
-        <>
+        <>  
             <section>
                 {isPending && <p>Loading user details...</p>}
 
